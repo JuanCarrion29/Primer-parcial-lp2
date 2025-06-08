@@ -1,0 +1,45 @@
+/* Estilos para para productos */
+
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+}
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+.brand-header img {
+  width: 48px;
+  height: 48px;
+}
+.table thead th {
+  vertical-align: middle;
+  font-size: 1.1rem;
+  letter-spacing: .5px;
+}
+.table-hover tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background 0.2s;
+}
+.table-bordered {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.shadow-custom {
+  box-shadow: 0 4px 32px rgba(40, 64, 113, 0.09);
+}
+
+/* Estilos para detalles */
+
+.detalles-card {
+  border-radius: 18px;
+  background: #f8fafc;
+}
+.detalles-card .list-group-item {
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
