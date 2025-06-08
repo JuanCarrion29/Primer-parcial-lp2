@@ -1,4 +1,4 @@
-# Primer-parcial-lp2
+# Primer-parcial-LP2
 
 # Guía rápida: Configuración de entorno virtual y Flask
 
