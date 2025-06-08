@@ -1,5 +1,3 @@
-# Primer-parcial-LP2
-
 # Guía rápida: Configuración de entorno virtual y Flask
 
 Guía paso a paso para crear un entorno virtual en Python e instalar Flask y pandas para ejecutar la aplicación en Flask.
