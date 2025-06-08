@@ -31,15 +31,70 @@ body {
   box-shadow: 0 4px 32px rgba(40, 64, 113, 0.09);
 }
 
-/* Estilos para detalles */
+/* 333333333333333333333333333 */
 
-.detalles-card {
-  border-radius: 18px;
-  background: #f8fafc;
+/* ...otros estilos previos... */
+
+/* Botón "Volver al listado" más estético */
+.btn-volver {
+  background: #f3f6fa;
+  color: #235390;
+  border: 1px solid #c9d5e7;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 0.35rem 1.1rem;
+  font-size: 1rem;
+  transition: background 0.15s, color 0.15s, border 0.15s;
+  box-shadow: none;
+  text-decoration: none;
+  display: inline-block;
 }
-.detalles-card .list-group-item {
-  background: transparent;
-  border: none;
-  padding-left: 0;
-  padding-right: 0;
+.btn-volver:hover, .btn-volver:focus {
+  background: #e3ecf7;
+  color: #17436e;
+  border-color: #aac5e2;
+  text-decoration: none;
+}
+
+/* Línea separadora estética */
+.separador {
+  border-bottom: 1px solid #e3e7ee;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Más espacio entre el bloque de datos y los botones */
+.datos-producto-seccion {
+  margin-bottom: 2.2rem !important;
+  border-bottom: 1.5px solid #e3e7ee !important;
+  padding-bottom: 1.1rem !important;
+}
+
+/* Botones de navegación simples */
+.btn-nav-simple {
+  background: #f3f6fa;
+  color: #235390;
+  border: 1px solid #c9d5e7;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 0.35rem 1.1rem;
+  font-size: 1rem;
+  transition: background 0.15s, color 0.15s, border 0.15s;
+  box-shadow: none;
+}
+.btn-nav-simple:hover, .btn-nav-simple:focus {
+  background: #e3ecf7;
+  color: #17436e;
+  border-color: #aac5e2;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .btn-volver, .btn-nav-simple {
+    padding: 0.25rem 0.7rem;
+    font-size: 0.98rem;
+  }
+  .separador {
+    margin-bottom: 1rem;
+  }
 }

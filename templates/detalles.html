@@ -9,20 +9,38 @@
 </head>
 <body>
   <div class="container py-5">
-    <div class="brand-header mb-4">
+    <div class="brand-header mb-4 d-flex align-items-center gap-3">
       <img src="https://cdn-icons-png.flaticon.com/128/9725/9725648.png" alt="Logo Productos">
       <h1 class="fw-bold mb-0 text-dark">Detalle del Producto</h1>
     </div>
-    <div class="card shadow-custom detalles-card mx-auto" style="max-width: 420px;">
-      <div class="card-body">
-        <ul class="list-group list-group-flush fs-5">
-          <li class="list-group-item"><span class="fw-bold text-secondary">ID:</span> {{ producto.id }}</li>
-          <li class="list-group-item"><span class="fw-bold text-secondary">Nombre:</span> <span class="text-dark">{{ producto.nombre_producto }}</span></li>
-          <li class="list-group-item"><span class="fw-bold text-secondary">Precio:</span> <span class="text-success">RD$ {{ "%.2f"|format(producto.precio) }}</span></li>
-        </ul>
-        <a href="{{ url_for('home') }}" class="btn btn-outline-primary mt-4 w-100 fw-semibold shadow-sm">← Volver al Listado</a>
+    <section class="detalle-producto-simple ps-2" style="max-width: 420px;">
+      <!-- Botón volver arriba, estilizado y alineado a la izquierda -->
+      <a href="{{ url_for('home') }}" class="btn btn-volver mb-3">
+        ← Volver al Listado
+      </a>
+      <div class="separador"></div>
+      <dl class="row fs-5 mb-4 border-bottom pb-3 datos-producto-seccion">
+        <dt class="col-4 text-secondary fw-semibold">ID</dt>
+        <dd class="col-8 mb-2">{{ producto.id }}</dd>
+        <dt class="col-4 text-secondary fw-semibold">Nombre</dt>
+        <dd class="col-8 mb-2 text-dark">{{ producto.nombre_producto }}</dd>
+        <dt class="col-4 text-secondary fw-semibold">Precio</dt>
+        <dd class="col-8 text-success mb-0">RD$ {{ "%.2f"|format(producto.precio) }}</dd>
+      </dl>
+      <div class="separador"></div>
+      <div class="mt-4 d-flex gap-2">
+        {% if anterior_id %}
+          <a href="{{ url_for('detalle_producto', producto_id=anterior_id) }}" class="btn btn-nav-simple">
+            &larr; Anterior
+          </a>
+        {% endif %}
+        {% if siguiente_id %}
+          <a href="{{ url_for('detalle_producto', producto_id=siguiente_id) }}" class="btn btn-nav-simple">
+            Siguiente &rarr;
+          </a>
+        {% endif %}
       </div>
-    </div>
+    </section>
   </div>
 </body>
 </html>
