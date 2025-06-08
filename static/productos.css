@@ -31,11 +31,6 @@ body {
   box-shadow: 0 4px 32px rgba(40, 64, 113, 0.09);
 }
 
-/* 333333333333333333333333333 */
-
-/* ...otros estilos previos... */
-
-/* Botón "Volver al listado" más estético */
 .btn-volver {
   background: #f3f6fa;
   color: #235390;
@@ -56,21 +51,18 @@ body {
   text-decoration: none;
 }
 
-/* Línea separadora estética */
 .separador {
   border-bottom: 1px solid #e3e7ee;
   margin-bottom: 1.5rem;
   margin-top: 0.5rem;
 }
 
-/* Más espacio entre el bloque de datos y los botones */
 .datos-producto-seccion {
   margin-bottom: 2.2rem !important;
   border-bottom: 1.5px solid #e3e7ee !important;
   padding-bottom: 1.1rem !important;
 }
 
-/* Botones de navegación simples */
 .btn-nav-simple {
   background: #f3f6fa;
   color: #235390;
